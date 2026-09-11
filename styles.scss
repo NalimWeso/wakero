@@ -1,0 +1,603 @@
+@font-face {
+    font-family: "MANIC";
+    src: url("fonts/MANIC-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-ThinItalic.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-ExtraLightItalic.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-ExtraBoldItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url("fonts/AnonymousPro-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url("fonts/AnonymousPro-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url("fonts/AnonymousPro-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url("fonts/AnonymousPro-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Shadows Into Light";
+    src: url("fonts/ShadowsIntoLight-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #100a1e;
+    color: #edeaf8;
+    font-family: "Fira Sans", sans-serif;
+    margin: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+        width: .5em;
+
+        &-thumb {
+            background-color: #edeaf8;
+            border-radius: 50px;
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1400px;
+
+        h2 {
+            width: 100%;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 32px;
+            width: 100%;
+            list-style-position: outside;
+
+            li:last-child {
+                margin: 0 0 16px 0;
+            }
+        }
+    }
+
+    #hero {
+        margin: 84px 0 40px 0;
+        max-width: 440px;
+        user-select: none;
+
+        h2 {
+            font-family: "MANIC", sans-serif;
+
+            z-index: 2;
+            margin: 0;
+            width: 100%;
+
+            &.subtitle {
+                font-family: "Shadows Into Light", cursive;
+                font-size: 26px;
+                text-shadow: 2px 2px 8px #ac53c3;
+                width: auto;
+            }
+
+            a {
+                color: #ac53c3;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+                user-select: auto;
+                transition: filter .3s ease-in-out;
+
+                &:hover {
+                    filter: saturate(200%);
+                }
+            }
+        }
+
+        .title {
+            font-family: "Shadows Into Light", cursive;
+            font-size: 140px;
+            text-shadow: 2px 2px 8px #ac53c3;
+            margin: -46px 0 -46px 0;
+        }
+    }
+
+    #description {
+        margin: 20px 0;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    #editions {
+        margin: 0 0 28px 0;
+        width: 100%;
+
+        .trilogies {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+
+            .trilogy {
+                &-edition {
+                    border: 1px solid #edeaf8;
+                    border-radius: 4px;
+                    margin: 10px;
+                    padding: 10px;
+                    min-width: 400px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .edition-title {
+                        font-weight: bold;
+                    }
+                }
+
+                &-title {
+                    font-weight: bold;
+                    font-size: 34px;
+                    margin: 16px 0 10px 0;
+                }
+            }
+        }
+    }
+
+    #rules {
+        p {
+            width: 100%;
+        }
+    }
+
+    #contact {
+        border: 1px solid #edeaf8;
+        border-radius: 4px;
+        margin: 50px 0 0 0;
+        padding: 12px 0;
+        min-width: 400px;
+
+        h2 {
+            margin: 0 0 16px 0;
+            width: auto;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+
+        a {
+            color: #ac53c3;
+            font-size: 22px;
+            font-weight: bold;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            transition: filter .3s ease-in-out;
+
+            &:hover {
+                filter: saturate(200%);
+            }
+        }
+    }
+
+    footer {
+        font-family: "Anonymous Pro", monospace;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 1350px) {
+    body #editions .trilogies {
+        .trilogy-title {
+            font-size: 28px;
+        }
+
+        .trilogy-edition {
+            min-width: 330px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        margin: 0 50px;
+
+        #hero {
+            margin: 56px 0 10px 0;
+        }
+
+        #description {
+            margin: 20px 0;
+        }
+
+        #editions {
+            margin: 0 0 28px 0;
+
+            .trilogies {
+                .trilogy {
+                    &-title {
+                        font-size: 24px;
+                        margin: 16px 0 10px 0;
+                    }
+
+                    &-edition {
+                        margin: 4px;
+                        min-width: 280px;
+
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #contact {
+            margin: 42px 0 0 0;
+        }
+
+        footer {
+            margin-top: 52px;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    body {
+        margin: 0 50px;
+    }
+
+    body #hero {
+        margin: 56px 0 10px 0;
+
+        .title {
+            margin: -46px 0 -46px 0;
+        }
+    }
+
+    body #description {
+        margin: 20px 0;
+    }
+
+    body #editions {
+        margin: 0 0 28px 0;
+
+        .trilogies {
+            .trilogy {
+                &-edition {
+                    margin: 10px;
+                    padding: 10px;
+                }
+
+                &-title {
+                    margin: 16px 0 10px 0;
+                }
+            }
+        }
+    }
+
+    body #contact {
+        margin: 50px 0 0 0;
+        padding: 12px 0;
+
+        h2 {
+            margin: 0 0 16px 0;
+        }
+
+        p {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    body footer {
+        margin-top: 60px;
+    }
+
+    body #editions .trilogies {
+        flex-direction: column;
+
+        .trilogy-edition {
+            min-width: 500px;
+
+            p {
+                font-size: 16px;
+
+                &.mobile-none {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    body #editions .trilogies {
+        width: 100%;
+
+        .trilogy {
+            width: 100%;
+
+            &-edition {
+                min-width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        margin: 0 6.000vw;
+
+        div h2 {
+            font-size: 4.200vw;
+            line-height: 1.4;
+        }
+
+        p,
+        li {
+            font-size: 3.200vw;
+            line-height: 1.6;
+            margin: 1.600vw 0;
+        }
+
+        div ul {
+            padding-left: 3.6vw;
+            list-style-position: outside;
+            align-self: flex-start;
+
+            li {
+                margin: 0;
+
+                &:last-child {
+                    margin: 0 0 1.6vw 0;
+                }
+            }
+        }
+
+        #hero {
+            margin: 8.500vw 0 2.000vw 0;
+
+            h2 {
+                font-size: 4.000vw;
+                margin: 0;
+
+                &.subtitle {
+                    font-size: 4.400vw;
+                    margin: 0;
+                }
+            }
+
+            .title {
+                font-size: 24.000vw;
+                margin: -8.000vw 0 -7.600vw 0;
+            }
+        }
+
+        #description {
+            margin: 2.400vw 0;
+        }
+
+        #editions {
+            margin: 0 0 2.800vw 0;
+
+            h2 {
+                margin-bottom: 2.400vw;
+            }
+
+            .trilogies .trilogy {
+                &-title {
+                    font-size: 4.800vw;
+                    margin: 2.800vw 0 2.000vw 0;
+                }
+
+                &-edition {
+                    margin: 2.000vw;
+                    padding: 2.000vw;
+                    min-width: 94%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 2.000vw;
+
+                    p {
+                        font-size: 3.2vw;
+                        margin: 0;
+                    }
+
+                    .edition-title {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        #rules h2 {
+            margin-top: 2.400vw;
+        }
+
+        #contact {
+            margin: 10.000vw 0 0 0;
+            padding: 2.400vw 0;
+            min-width: 94%;
+
+            h2 {
+                margin: 0 0 3.200vw 0;
+            }
+
+            p {
+                font-size: 3.600vw;
+                margin: 0 0 2.000vw 0;
+            }
+
+            a {
+                font-size: 4.200vw;
+            }
+        }
+
+        footer {
+            margin-top: 9.600vw;
+
+            p {
+                font-size: 2.400vw;
+            }
+        }
+    }
+}

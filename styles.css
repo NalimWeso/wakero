@@ -1,0 +1,485 @@
+@font-face {
+  font-family: "MANIC";
+  src: url("fonts/MANIC-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("fonts/AnonymousPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("fonts/AnonymousPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("fonts/AnonymousPro-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("fonts/AnonymousPro-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Shadows Into Light";
+  src: url("fonts/ShadowsIntoLight-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #100a1e;
+  color: #edeaf8;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #edeaf8;
+  border-radius: 50px;
+}
+body div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+}
+body div h2 {
+  width: 100%;
+}
+body div ul {
+  margin: 0;
+  padding-left: 32px;
+  width: 100%;
+  list-style-position: outside;
+}
+body div ul li:last-child {
+  margin: 0 0 16px 0;
+}
+body #hero {
+  margin: 84px 0 40px 0;
+  max-width: 440px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body #hero h2 {
+  font-family: "MANIC", sans-serif;
+  z-index: 2;
+  margin: 0;
+  width: 100%;
+}
+body #hero h2.subtitle {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 26px;
+  text-shadow: 2px 2px 8px #ac53c3;
+  width: auto;
+}
+body #hero h2 a {
+  color: #ac53c3;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+  transition: filter 0.3s ease-in-out;
+}
+body #hero h2 a:hover {
+  filter: saturate(200%);
+}
+body #hero .title {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 140px;
+  text-shadow: 2px 2px 8px #ac53c3;
+  margin: -46px 0 -46px 0;
+}
+body #description {
+  margin: 20px 0;
+}
+body #description p {
+  width: 100%;
+}
+body #editions {
+  margin: 0 0 28px 0;
+  width: 100%;
+}
+body #editions .trilogies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+body #editions .trilogies .trilogy-edition {
+  border: 1px solid #edeaf8;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+body #editions .trilogies .trilogy-edition p {
+  margin: 0;
+}
+body #editions .trilogies .trilogy-edition .edition-title {
+  font-weight: bold;
+}
+body #editions .trilogies .trilogy-title {
+  font-weight: bold;
+  font-size: 34px;
+  margin: 16px 0 10px 0;
+}
+body #rules p {
+  width: 100%;
+}
+body #contact {
+  border: 1px solid #edeaf8;
+  border-radius: 4px;
+  margin: 50px 0 0 0;
+  padding: 12px 0;
+  min-width: 400px;
+}
+body #contact h2 {
+  margin: 0 0 16px 0;
+  width: auto;
+}
+body #contact p {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+body #contact a {
+  color: #ac53c3;
+  font-size: 22px;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  transition: filter 0.3s ease-in-out;
+}
+body #contact a:hover {
+  filter: saturate(200%);
+}
+body footer {
+  font-family: "Anonymous Pro", monospace;
+  margin-top: 70px;
+}
+
+@media (max-width: 1350px) {
+  body #editions .trilogies .trilogy-title {
+    font-size: 28px;
+  }
+  body #editions .trilogies .trilogy-edition {
+    min-width: 330px;
+  }
+  body #editions .trilogies .trilogy-edition p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    margin: 0 50px;
+  }
+  body #hero {
+    margin: 56px 0 10px 0;
+  }
+  body #description {
+    margin: 20px 0;
+  }
+  body #editions {
+    margin: 0 0 28px 0;
+  }
+  body #editions .trilogies .trilogy-title {
+    font-size: 24px;
+    margin: 16px 0 10px 0;
+  }
+  body #editions .trilogies .trilogy-edition {
+    margin: 4px;
+    min-width: 280px;
+  }
+  body #editions .trilogies .trilogy-edition p {
+    font-size: 12px;
+  }
+  body #contact {
+    margin: 42px 0 0 0;
+  }
+  body footer {
+    margin-top: 52px;
+  }
+}
+@media (max-width: 980px) {
+  body {
+    margin: 0 50px;
+  }
+  body #hero {
+    margin: 56px 0 10px 0;
+  }
+  body #hero .title {
+    margin: -46px 0 -46px 0;
+  }
+  body #description {
+    margin: 20px 0;
+  }
+  body #editions {
+    margin: 0 0 28px 0;
+  }
+  body #editions .trilogies .trilogy-edition {
+    margin: 10px;
+    padding: 10px;
+  }
+  body #editions .trilogies .trilogy-title {
+    margin: 16px 0 10px 0;
+  }
+  body #contact {
+    margin: 50px 0 0 0;
+    padding: 12px 0;
+  }
+  body #contact h2 {
+    margin: 0 0 16px 0;
+  }
+  body #contact p {
+    margin: 0 0 10px 0;
+  }
+  body footer {
+    margin-top: 60px;
+  }
+  body #editions .trilogies {
+    flex-direction: column;
+  }
+  body #editions .trilogies .trilogy-edition {
+    min-width: 500px;
+  }
+  body #editions .trilogies .trilogy-edition p {
+    font-size: 16px;
+  }
+  body #editions .trilogies .trilogy-edition p.mobile-none {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  body #editions .trilogies {
+    width: 100%;
+  }
+  body #editions .trilogies .trilogy {
+    width: 100%;
+  }
+  body #editions .trilogies .trilogy-edition {
+    min-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0 6vw;
+  }
+  body div h2 {
+    font-size: 4.2vw;
+    line-height: 1.4;
+  }
+  body p,
+  body li {
+    font-size: 3.2vw;
+    line-height: 1.6;
+    margin: 1.6vw 0;
+  }
+  body div ul {
+    padding-left: 3.6vw;
+    list-style-position: outside;
+    align-self: flex-start;
+  }
+  body div ul li {
+    margin: 0;
+  }
+  body div ul li:last-child {
+    margin: 0 0 1.6vw 0;
+  }
+  body #hero {
+    margin: 8.5vw 0 2vw 0;
+  }
+  body #hero h2 {
+    font-size: 4vw;
+    margin: 0;
+  }
+  body #hero h2.subtitle {
+    font-size: 4.4vw;
+    margin: 0;
+  }
+  body #hero .title {
+    font-size: 24vw;
+    margin: -8vw 0 -7.6vw 0;
+  }
+  body #description {
+    margin: 2.4vw 0;
+  }
+  body #editions {
+    margin: 0 0 2.8vw 0;
+  }
+  body #editions h2 {
+    margin-bottom: 2.4vw;
+  }
+  body #editions .trilogies .trilogy-title {
+    font-size: 4.8vw;
+    margin: 2.8vw 0 2vw 0;
+  }
+  body #editions .trilogies .trilogy-edition {
+    margin: 2vw;
+    padding: 2vw;
+    min-width: 94%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 2vw;
+  }
+  body #editions .trilogies .trilogy-edition p {
+    font-size: 3.2vw;
+    margin: 0;
+  }
+  body #editions .trilogies .trilogy-edition .edition-title {
+    font-weight: bold;
+  }
+  body #rules h2 {
+    margin-top: 2.4vw;
+  }
+  body #contact {
+    margin: 10vw 0 0 0;
+    padding: 2.4vw 0;
+    min-width: 94%;
+  }
+  body #contact h2 {
+    margin: 0 0 3.2vw 0;
+  }
+  body #contact p {
+    font-size: 3.6vw;
+    margin: 0 0 2vw 0;
+  }
+  body #contact a {
+    font-size: 4.2vw;
+  }
+  body footer {
+    margin-top: 9.6vw;
+  }
+  body footer p {
+    font-size: 2.4vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
