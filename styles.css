@@ -180,7 +180,7 @@ body div ul li:last-child {
 }
 body #hero {
   margin: 84px 0 40px 0;
-  max-width: 440px;
+  max-width: 450px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -193,7 +193,7 @@ body #hero h2 {
 }
 body #hero h2.subtitle {
   font-family: "Shadows Into Light", cursive;
-  font-size: 26px;
+  font-size: 27px;
   text-shadow: 2px 2px 8px #ac53c3;
   width: auto;
 }
@@ -422,7 +422,7 @@ body footer {
     margin: 0;
   }
   body #hero h2.subtitle {
-    font-size: 4.4vw;
+    font-size: 4.6vw;
     margin: 0;
   }
   body #hero .title {
